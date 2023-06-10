@@ -37,3 +37,15 @@
 			10.What happens at run time
 			11.JDK vs JRE vs JVM
 
+3. Learn about Spring boot, Hibernate, Sprint JPA
+
+	=>https://www.javatpoint.com/spring-boot-tutorial
+		1.Spring Boot
+		2.Advantages
+		3.Goals of Spring Boot
+		4.Spring Boot for Web Development
+		5.Spring Boot Architecture
+		6.Flow of request and response through layers
+
+
+
