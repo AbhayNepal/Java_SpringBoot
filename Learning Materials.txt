@@ -1,3 +1,39 @@
 1. Standard Coding Practices and Design Patterns 
 	=>https://www.youtube.com/watch?v=tDxnyop48mY&list=PLsyeobzWxl7r2ZX1fl-7CKnayxHJA_1ol
-	=>https://www.javatpoint.com/factory-method-design-pattern 
+	
+	=>https://www.javatpoint.com/factory-method-design-pattern
+		.Creational Design Pattern
+			1.Factor Design Pattern
+			2.Builder Design Pattern
+			3.Prototype Pattern
+			4.Abstract Factory
+		.Structural Design Pattern 
+			1.Adapter
+			2.Bridge
+			3.Composite
+			4.Decorator
+			5.Facade
+		.Behavioral Design Pattern
+			1.Observer
+			2.State
+			3.Iterator 
+
+2. Learn about the OOP concepts as as well Java fundamentals.
+
+	=>https://www.youtube.com/watch?v=bSrm9RXwBaI
+		.OOP concepts in Java
+	
+	=>https://www.javatpoint.com/java-basics
+		.Java Fundamentals
+			1.Intro to java
+			2.Editions of Java
+			3.Types of Java Apps
+			4.Java Platform
+			5.Features of Java
+			6.Compilation Flow 
+			7.Ways to write main method
+			8.Valid and invalid java main method
+			9.What happens at compile time
+			10.What happens at run time
+			11.JDK vs JRE vs JVM
+
