@@ -47,5 +47,19 @@
 		5.Spring Boot Architecture
 		6.Flow of request and response through layers
 
+	=>https://www.javatpoint.com/hibernate-tutorial
+		1.Hibernate Intro	
+		2.ORM
+		3.Adv of Hibernate
+		4.Hibernate Architecture
+
+	=>https://www.youtube.com/watch?v=sdDDuQuX2cg&t=1218s
+		.basic working of spring boot
+		. a dummy project for learning spring boot
+	=>
+
+
+
+
 
 
