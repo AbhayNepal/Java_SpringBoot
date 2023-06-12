@@ -2,11 +2,17 @@ package com.SpringBoot.Viveka.Services;
 
 import  java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import com.SpringBoot.Viveka.entities.Course;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Service
 public class CourseServiceImpl implements CourseService {
-	
+
+	@Autowired
+	private Course courseDao;
+
 	List<Course> list;
 
 
@@ -41,5 +47,16 @@ public class CourseServiceImpl implements CourseService {
 		return course;
 	}
 
+	@Override
+	public String UpdateCourse(Course course) {
+		for(Course e:list) {
+		if(e.getId() == course.getId()){
+			e.setTitle(course.getTitle());
+			e.setDescription(course.getDescription());
+			return  "Updated";
+		}
+		}
+		return "Please Enter a valid object";
 
-}
+	}
+	}

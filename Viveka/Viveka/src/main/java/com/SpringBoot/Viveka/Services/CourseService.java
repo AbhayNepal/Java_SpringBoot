@@ -11,4 +11,6 @@ public interface CourseService {
     Course getCourse(Long id);
 
     Course addCourse(Course course);
+
+    String UpdateCourse(Course course);
 }

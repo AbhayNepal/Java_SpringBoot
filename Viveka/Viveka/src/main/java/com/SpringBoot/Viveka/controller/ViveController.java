@@ -34,4 +34,9 @@ public class ViveController {
 	public Course addCourse(@RequestBody Course course){
 		return this.courseService.addCourse(course);
 	}
+
+	@PutMapping("/Update")
+	public	String UpdateCourse(@RequestBody Course course){
+		return this.courseService.UpdateCourse(course);
+	}
 }
