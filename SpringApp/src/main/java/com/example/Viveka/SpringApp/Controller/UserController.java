@@ -1,22 +1,26 @@
 package com.example.Viveka.SpringApp.Controller;
 
 import com.example.Viveka.SpringApp.Models.User;
+import com.example.Viveka.SpringApp.Services.RoleServices;
 import com.example.Viveka.SpringApp.Services.UserServices;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
 @RestController
 @RequestMapping("/User")
 public class UserController {
+   private BCryptPasswordEncoder passswordEncoder = new BCryptPasswordEncoder();
     private final UserServices userServices;
 
 
-    public UserController(UserServices userServices) {
+
+    public UserController(UserServices userServices,RoleServices roleServices) {
         this.userServices = userServices;
 
     }
+
 
     @GetMapping
     public List<User> findAllUser(){
@@ -24,8 +28,8 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable("id") Long id){
-        return userServices.findById(id);
+    public Optional<User> findUserById(@PathVariable("id") Long id){
+        return userServices.findUserById(id);
     }
 
     @PostMapping("/{id}")
@@ -40,6 +44,10 @@ public class UserController {
 
     @PostMapping
     public User saveUser(@RequestBody User user){
+
+        String pwd = user.getPassword();
+        String encryptedPwd = passswordEncoder.encode(pwd);
+        user.setPassword(encryptedPwd);
         return userServices.saveUser(user);
     }
     }

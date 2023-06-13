@@ -11,35 +11,35 @@ import java.util.Optional;
 @Service
 public class UserServicesImpl implements UserServices {
 
-    private final UserRepository userRepository;
+private final UserRepository userRepository;
 
-    public UserServicesImpl(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+public UserServicesImpl(UserRepository userRepository) {
+    this.userRepository = userRepository;
+}
 
 
-    @Override
-    public List<User> findAllUsers() {
-        return userRepository.findAll();
-    }
+@Override
+public List<User> findAllUsers() {
+    return userRepository.findAll();
+}
 
-    @Override
-    public Optional<User> findById(Long Id) {
-        return userRepository.findById(Id);
-    }
+@Override
+public Optional<User> findUserById(Long Id) {
+    return userRepository.findById(Id);
+}
 
-    @Override
-    public User saveUser(User user) {
-        return userRepository.save(user);
-    }
+@Override
+public User saveUser(User user) {
+    return userRepository.save(user);
+}
 
-    @Override
-    public User updateUser(User user) {
-        return userRepository.save(user);
-    }
+@Override
+public User updateUser(User user) {
+    return userRepository.save(user);
+}
 
-    @Override
-    public void deleteUser(Long Id) {
-        userRepository.deleteById(Id);
-    }
+@Override
+public void deleteUser(Long Id) {
+    userRepository.deleteById(Id);
+}
 }

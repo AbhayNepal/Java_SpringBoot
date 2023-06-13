@@ -23,18 +23,18 @@ public class RoleController {
     }
 
 
-    @PostMapping("/{id}")
+    @DeleteMapping("/{id}")
     public void deleteRole(@PathVariable("id") Long id){
         roleServices.deleteRole(id);
     }
 
     @PutMapping
-    public Role updateUser(@RequestBody Role role){
+    public Role updateRole(@RequestBody Role role){
         return roleServices.saveRole(role);
     }
 
     @PostMapping
-    public Role saveUser(@RequestBody Role role){
+    public Role saveRole(@RequestBody Role role){
         return roleServices.saveRole(role);
     }
     }
