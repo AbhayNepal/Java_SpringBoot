@@ -10,6 +10,6 @@
     6.Put localhost:8080/User or /Role for updating a user or role in database
 
 ## Role based Authorization and Authentication
-    1. The url /rest/auth/process is defined to implement role based authentication
+    1. The url /rest/auth/process is defined to demonstrate role based authentication
     2. User with Admin role can only access the /process request.
     3. User need to enter a valid username and password combination inside the login form which match the username and password combination inside the database.
