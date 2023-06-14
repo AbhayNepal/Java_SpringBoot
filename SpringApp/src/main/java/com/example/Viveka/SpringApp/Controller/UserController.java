@@ -1,5 +1,6 @@
 package com.example.Viveka.SpringApp.Controller;
 
+import com.example.Viveka.SpringApp.Models.Role;
 import com.example.Viveka.SpringApp.Models.User;
 import com.example.Viveka.SpringApp.Services.RoleServices;
 import com.example.Viveka.SpringApp.Services.UserServices;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
 @RestController
 @RequestMapping("/User")
 public class UserController {
@@ -44,6 +46,11 @@ public class UserController {
 
     @PostMapping
     public User saveUser(@RequestBody User user){
+        Role role = user.getRole();
+
+        // Validate roles here (optional)
+
+        user.setRole(role);
 
         String pwd = user.getPassword();
         String encryptedPwd = passswordEncoder.encode(pwd);

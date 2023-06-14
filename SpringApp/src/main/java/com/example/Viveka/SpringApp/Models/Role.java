@@ -1,12 +1,10 @@
 package com.example.Viveka.SpringApp.Models;
 
 import lombok.Data;
-import lombok.ToString;
 
 import javax.persistence.*;
 
 @Data
-@ToString
 @Entity
 @Table(name="roles")
 
