@@ -15,6 +15,6 @@
     3. User need to enter a valid username and password combination inside the login form which match the username and password combination inside the database.
 
 ##  todo
-    - you cannot login and logout, you need to restart the server for a second login.
+    - you cannot logout after logging in, you need to restart the server for a second login.
     - logout feature.
 
