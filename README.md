@@ -1,7 +1,7 @@
 # Java_SpringBoot
 ## Two entities are defined i.e Role and User table
     
-## You can use postman to access those tables in following urls
+## You can use postman to access those tables with following urls
     1. Post localhost:8080/User to add user, which takes username, email ,password and role(id,name) in json format
     2.Post localhost:8080/Role to add a role, which takes id,name in json format
     3.Get localhost:8080/User or /Role to retreive all users and roles in database
