@@ -14,7 +14,6 @@ public class RoleController {
 
     public RoleController(RoleServices roleServices) {
         this.roleServices = roleServices;
-
     }
 
     @GetMapping

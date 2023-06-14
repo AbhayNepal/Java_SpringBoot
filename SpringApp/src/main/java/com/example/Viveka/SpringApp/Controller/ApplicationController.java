@@ -11,4 +11,6 @@ public class ApplicationController {
     public String process(){
         return "passed the spring security through DB";
     }
+
+
 }
